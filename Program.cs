@@ -10,20 +10,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //сортировка одномерного массива
             int[] array = { -5, -8, 0, 1, 3 };
-            for (int i = 0; i < array.Length - 1; i++)
+            Array.Sort(array);
+            foreach (int elem in array)
             {
-                for (int j = i + 1; j < array.Length; j++)
-                {
-                    if (array[i] > array[j])
-                    {
-                        int p = array[i];
-                        array[i] = array[j];
-                        array[j] = p;
-                    }
-                }
+                Console.WriteLine($"{elem}");
             }
+            Console.WriteLine();
+            Array.Reverse(array);
             foreach (int elem in array)
             {
                 Console.WriteLine($"{elem}");
