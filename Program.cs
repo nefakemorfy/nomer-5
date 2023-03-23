@@ -24,7 +24,7 @@ namespace ConsoleApp1
                     }
                 }
             }
-             foreach (int elem in array)
+            foreach (int elem in array)
             {
                 Console.WriteLine($"{elem}");
             }
